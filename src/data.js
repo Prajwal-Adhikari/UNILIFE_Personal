@@ -46,3 +46,49 @@ export const categories = [
     title: 'Chair',
   },
 ]
+
+
+export const hostels = [
+  {
+    id:1,
+    img:"https://www.ikea.com/om/en/images/products/mydal-bunk-bed-frame-pine__1044974_pe842350_s5.jpg?f=s",
+    hostelname:"WTC Hostel",
+  },
+  {
+    id:2,
+    img:"https://www.ikea.com/om/en/images/products/mydal-bunk-bed-frame-pine__1044974_pe842350_s5.jpg?f=s",
+    hostelname:"Divya girls hostel",
+  },
+  {
+    id:3,
+    img:"https://www.ikea.com/om/en/images/products/mydal-bunk-bed-frame-pine__1044974_pe842350_s5.jpg?f=s",
+    hostelname:"Nexy girls hostel",
+  },
+  {
+    id:4,
+    img:"https://www.ikea.com/om/en/images/products/mydal-bunk-bed-frame-pine__1044974_pe842350_s5.jpg?f=s",
+    hostelname:"WTC Hostel",
+  },
+  {
+    id:5,
+    img:"https://www.ikea.com/om/en/images/products/mydal-bunk-bed-frame-pine__1044974_pe842350_s5.jpg?f=s",
+    hostelname:"Divya girls hostel",
+  },
+  {
+    id:6,
+    img:"https://www.ikea.com/om/en/images/products/mydal-bunk-bed-frame-pine__1044974_pe842350_s5.jpg?f=s",
+    hostelname:"Nexy girls hostel",
+  },
+  {
+    id:7,
+    img:"https://www.ikea.com/om/en/images/products/mydal-bunk-bed-frame-pine__1044974_pe842350_s5.jpg?f=s",
+    hostelname:"Divya girls hostel",
+  },
+  {
+    id:8,
+    img:"https://www.ikea.com/om/en/images/products/mydal-bunk-bed-frame-pine__1044974_pe842350_s5.jpg?f=s",
+    hostelname:"Nexy girls hostel",
+  },
+
+
+];

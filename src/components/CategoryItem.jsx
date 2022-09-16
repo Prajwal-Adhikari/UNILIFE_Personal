@@ -27,8 +27,20 @@ const Info = styled.div`
 const Title = styled.h1`
     color: white;
     font-size: 54px;
+    margin-bottom:20px;
 `;
-const Button = styled.button``;
+const Button = styled.button`
+    border: none;
+    padding:10px;
+    background-color: white;
+    font-weight: 600;
+    
+    cursor:pointer;
+    &:hover{
+      color: white;
+      background-color: grey;
+    }
+`;
 
 const CategoryItem = ({item}) => {
   return (

@@ -5,7 +5,7 @@ import { sliderItems } from '../data';
 
 const Container = styled.div`
   margin-top: 50px;
-  background: linear-gradient(100deg, #0df7eb, #0648fd);
+  /* background: linear-gradient(100deg, #0df7eb, #0648fd); */
   width: 100%;
   height: 70vh;
   display: flex;
@@ -67,7 +67,7 @@ const InfoContainer = styled.div`
   flex: 1;
   height: 100%;
   width: 50 vw;
-  background-color: #d1d1d1;
+  background-color: #d2f6fc7c;
 `;
 
 const Image = styled.img`
@@ -125,7 +125,7 @@ const Slider = () => {
       <Wrapper slideIndex={slideIndex}>
 
         {sliderItems.map((item)=>(
-        <Slide>
+        <Slide key={item.id}>
           <ImgContainer>
             <Image src= {item.img} />
           </ImgContainer>
@@ -141,7 +141,7 @@ const Slider = () => {
 
 
       </Wrapper>
-      <Arrow direction="right" onClick={()=>handleClick("left")}>
+      <Arrow direction="right" onClick={()=>handleClick("rignt")}>
         <ArrowRightOutlined />
       </Arrow>
     </Container>
