@@ -9,8 +9,8 @@ const Container = styled.div`
 const Wrapper = styled.div`
     padding:20px;
     width:45%;
-    background : linear-gradient(100deg,#c5c9fd,#eec1db);
-    height: 128%;
+    background : linear-gradient(100deg,#ffffff,rgba(255,0,0,0.4));
+    height: 140%;
     border-radius: 10%;
     border:2px solid gray;
     box-shadow: 7px 7px 3px #c5c9fd;
@@ -18,9 +18,10 @@ const Wrapper = styled.div`
 
 const Left = styled.div`
     flex:1;
-    background-image: url('https://i.pinimg.com/736x/18/11/f3/1811f344025539b7b4abb446eb6f910d.jpg');
+    background-image: url('https://img.freepik.com/free-vector/sign-concept-illustration_114360-125.jpg?w=740&t=st=1663395359~exp=1663395959~hmac=e29be553ca0337da41243dad4b351414f1a6418d93db5ff92980496754d12fec');
     background-repeat: no-repeat;
     background-position: 50%;
+    background-size: 100%;
 
 `;
 const Right = styled.div`

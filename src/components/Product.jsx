@@ -10,7 +10,6 @@ const Info = styled.div`
     top: 0;
     left : 0;
     z-index: 3;
-
     display: flex;
     align-items: center;
     justify-content: center;
@@ -35,15 +34,6 @@ const Container = styled.div`
 
 `;
 
-// const Cricle = styled.div`
-//     width: 200px;
-//     height: 200px;
-//     border-radius: 50%;
-//     background-color: white;
-//     position:absolute;
-//     z-index: 2;
-// `;
-
 
 const Image = styled.img`
   height:75%;
@@ -64,7 +54,7 @@ const Icon = styled.div`
     margin: 5px;
     transition: all 0.35s ease;
     &:hover{
-      background-color: lightgreen;
+      background-color : #${props=>props.color};
       transform:scale(1.1);
     }
 `;
@@ -77,14 +67,14 @@ const Product = ({item}) => {
       {/* <Cricle > */}
       <Image src = {item.img} />
       <Info>
-        <Icon>
-          <ShoppingCartOutlined/>
+        <Icon color = "0E68CE">
+          <ShoppingCartOutlined />
         </Icon>
-        <Icon>
-          <SearchOutlined/>
+        <Icon color = "7FDB6A">
+          <SearchOutlined />
         </Icon>
-        <Icon>
-          <FavoriteBorderOutlined/>
+        <Icon color = "fb3958">
+          <FavoriteBorderOutlined  />
         </Icon>
       </Info>
       {/* </Cricle> */}

@@ -63,7 +63,7 @@ const MenuItems = styled.div`
     cursor: pointer;
     margin-left : 125px ;
     &:hover {
-        color: #d0d32f;
+        color: #2f84d3;
     }
 `;
 
