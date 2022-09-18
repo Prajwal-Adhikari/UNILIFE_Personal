@@ -8,8 +8,8 @@ const Container = styled.div`
 `;
 const Wrapper = styled.div`
     padding:20px;
-    width:45%;
-    background : linear-gradient(100deg,#ffffff,rgba(255,0,0,0.4));
+    width:35%;
+    background-image: url('https://img.freepik.com/free-vector/blue-curve-background_53876-113112.jpg?w=740&t=st=1663470219~exp=1663470819~hmac=3bf24934103af81b2dab1912e557a8398e3d087ed13e636aaa78455dab19415b');
     height: 50%;
     border-radius: 10%;
     border:2px solid gray;
@@ -18,7 +18,7 @@ const Wrapper = styled.div`
 
 const Left = styled.div`
     flex:1;
-    background-image: url('https://img.freepik.com/free-vector/sign-concept-illustration_114360-125.jpg?w=740&t=st=1663395359~exp=1663395959~hmac=e29be553ca0337da41243dad4b351414f1a6418d93db5ff92980496754d12fec');
+    background-image: url('https://img.freepik.com/free-vector/mobile-login-concept-illustration_114360-83.jpg?w=740&t=st=1663470057~exp=1663470657~hmac=83439417a9a3f69c4d9deeaf8e88001631bbb198d4aff9f26c4fce76f789704f');
     background-repeat: no-repeat;
     background-position: 50%;
     background-size: 100%;
@@ -26,9 +26,9 @@ const Left = styled.div`
 `;
 const Right = styled.div`
     flex:1;
-    margin-top: 10%;
+    margin-top: 5%;
     padding: 15px;
-    height: 55%;
+    height: 80%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -55,9 +55,9 @@ const Title = styled.h1`
 
 const Input = styled.input`
     flex:1;
-    padding: 5px;
+    padding: 10px;
     margin: 5px;
-    width: 70%;
+    width: 80%;
     border:1px solid gray;
     border-radius: 5px;
   
@@ -65,12 +65,18 @@ const Input = styled.input`
 
 const Button = styled.button`
     width:30%;
-    padding: 10px 0px;
-    background-color: white;
-    border-radius: 15px;
+    padding: 7px 0px;
+    margin: 10px;
+    background : linear-gradient(90deg,#dce5e6,#00ccff);
     font-weight: 50;
 
 `;
+
+const Link = styled.a`
+    margin : 5px 0px;
+    text-decoration: underline;
+`;
+
 
 const Login = () => {
   return (
@@ -89,6 +95,8 @@ const Login = () => {
                 <Input placeholder="Password"/>
                 
                 <Button>Login</Button>
+                <Link>Forgot Password?</Link>
+                <Link>create an account</Link>
             </Form>
         </Wrapper>
         </Right>

@@ -9,7 +9,7 @@ const Container = styled.div`
 const Wrapper = styled.div`
     padding:20px;
     width:45%;
-    background : linear-gradient(100deg,#ffffff,rgba(255,0,0,0.4));
+    background : linear-gradient(100deg,#ffffff,#00ff8866);
     height: 140%;
     border-radius: 10%;
     border:2px solid gray;
@@ -58,7 +58,7 @@ const Input = styled.input`
     margin: 5px;
     width: 70%;
     border:1px solid gray;
-    border-radius: 5px;
+    /* border-radius: 5px; */
   
 `;
 const Agreement = styled.span`
@@ -73,8 +73,13 @@ const Button = styled.button`
     width:30%;
     padding: 10px 0px;
     background-color: white;
-    border-radius: 15px;
+    /* border-radius: 15px; */
     font-weight: 50;
+    &:hover{
+        background-color: #f7abb8;
+        transition: 0.5s ease;
+        font-weight: bold;
+    }
 
 `;
 
