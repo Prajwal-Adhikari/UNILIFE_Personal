@@ -1,56 +1,8 @@
-// import styled from "styled-components"
-// import Navbar from "../components/Navbar"
-// import Footer from "../components/Footer"
-
-// const Container = styled.div``;
-
-// const Wrapper = styled.div`
-//     padding:20px;
-
-// `;
-
-// const Title = styled.h1`
-//     font-weight: 300;
-//     text-align: center;
-// `;
-
-// const TopButton = styled.button`
-//     font-weight: 300;
-//     padding : 10px;
-//     cursor: pointer;
-// `;
-
-// const Top = styled.div`
-//     display: flex;
-//     justify-content: space-between;
-//     align-items: center;
-// `;
-
-// const Bottom = styled.div``;
-
-// const Cart = () => {
-//   return (
-//     <Container>
-//         <Navbar/>
-//         <Wrapper>
-//             <Title>CART</Title>
-//             <Top>
-//                 <TopButton>Continue Shopping</TopButton>
-//                 <TopButton>Checkout</TopButton>
-//             </Top>
-//             <Bottom></Bottom>
-//         </Wrapper>
-//         <Footer/>
-//     </Container>
-//   )
-// }
-
-// export default Cart
 
 import { Add, Remove } from "@material-ui/icons";
 import styled from "styled-components";
 import Footer from "../components/Footer";
-import Navbar from "../components/Navbar";
+// import Navbar from "../components/Navbar";
 import { mobile } from "../responsive";
 
 const Container = styled.div``;
@@ -128,14 +80,14 @@ const ProductName = styled.span``;
 
 const ProductId = styled.span``;
 
-const ProductColor = styled.div`
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  background-color: ${(props) => props.color};
-`;
+// const ProductColor = styled.div`
+//   width: 20px;
+//   height: 20px;
+//   border-radius: 50%;
+//   background-color: ${(props) => props.color};
+// `;
 
-const ProductSize = styled.span``;
+// const ProductSize = styled.span``;
 
 const PriceDetail = styled.div`
   flex: 1;
@@ -204,7 +156,7 @@ const Button = styled.button`
 const Cart = () => {
   return (
     <Container>
-      <Navbar />
+      {/* <Navbar /> */}
       <Wrapper>
         <Title>YOUR CART   </Title>
         <Top>

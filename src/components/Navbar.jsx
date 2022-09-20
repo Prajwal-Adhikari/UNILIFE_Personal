@@ -2,6 +2,7 @@ import { Badge } from '@material-ui/core'
 import { Search, ShoppingCartOutlined } from '@material-ui/icons'
 import React from 'react'
 import styled from 'styled-components'
+import {Link} from "react-router-dom"
 
 const Container = styled.div`
   height: 60px;
@@ -74,7 +75,10 @@ const Navbar = () => {
       <Wrapper>
 
         <Left>
-            <Logo>Unilife</Logo>
+        <Link to="/" style={{ color: 'inherit', textDecoration: 'inherit'}}>
+        <Logo>UNILIFE</Logo>
+              </Link>
+           
         </Left>
 
         <Center>
@@ -85,11 +89,27 @@ const Navbar = () => {
         </Center>
 
         <Right>
-            <MenuItems>REGISTER</MenuItems>
-            <MenuItems>LOGIN</MenuItems>
+            <MenuItems>
+              <Link to="/" style={{ color: 'inherit', textDecoration: 'inherit'}}>
+                HOME
+              </Link>
+            </MenuItems>
+            
+
+            <MenuItems><Link to="/register" style={{ color: 'inherit', textDecoration: 'inherit'}}>
+            REGISTER
+              </Link></MenuItems>
+
+            <MenuItems>
+              <Link to = "/login" style={{ color: 'inherit', textDecoration: 'inherit'}}>LOGIN</Link>
+            </MenuItems>
+            <MenuItems><Link to = "/product" style={{ color: 'inherit', textDecoration: 'inherit'}}>PRODUCT</Link></MenuItems>
             <MenuItems>
                 <Badge badgeContent={4} color = "primary">
-                    <ShoppingCartOutlined/>
+                <Link to="/cart" style={{ color: 'inherit', textDecoration: 'inherit'}}>
+            <ShoppingCartOutlined/>
+              </Link>
+                    
                 </Badge>
             </MenuItems>
         </Right>

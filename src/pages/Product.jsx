@@ -1,7 +1,7 @@
 import { Add, Remove } from "@material-ui/icons";
 import styled from "styled-components";
 import Footer from "../components/Footer";
-import Navbar from "../components/Navbar";
+// import Navbar from "../components/Navbar";
 
 
 const Container = styled.div``;
@@ -87,7 +87,7 @@ const Product = () => {
    
   return (
     <Container>
-        <Navbar/>
+        
         <Wrapper>
             <ImgContainer>
             <Image src="https://static-01.daraz.com.np/p/6698ff6720f47ad6da734b51f27409ce.jpg" />
