@@ -1,4 +1,5 @@
 import  styled  from "styled-components";
+import {Link} from "react-router-dom";
 const Container = styled.div`
     flex:1;
     margin: 3px;
@@ -48,7 +49,8 @@ const CategoryItem = ({item}) => {
         <Image src = {item.img}/>
         <Info>
             <Title>{item.title}</Title>
-            <Button>Shop Now</Button>
+            <Link to="/product" style={{ color: 'inherit', textDecoration: 'inherit'}}><Button>Shop Now</Button></Link>
+            
         </Info>
     </Container>
   )

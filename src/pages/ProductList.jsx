@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import Navbar from "../components/Navbar";
 import Products from "../components/Products";
 import Footer from "../components/Footer";
 const Container = styled.div``;
@@ -39,7 +38,7 @@ const ProductList = () => {
   return (
 
     <Container>
-        <Navbar/>
+        {/* <Navbar/> */}
         <Title>Rooms</Title>
         <FilterContainer>
             <Filter><FilterText>Filter:</FilterText>

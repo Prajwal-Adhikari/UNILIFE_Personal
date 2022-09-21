@@ -37,9 +37,15 @@ const Container = styled.div`
 
 const Image = styled.img`
   height:75%;
-  border-radius: 15%;
+  border-radius: 10%;
+  width: 280px;
 
 
+`;
+
+const Description = styled.p`
+    font-size: 24px;
+    flex : 2;
 `;
 
 
@@ -78,6 +84,7 @@ const Product = ({item}) => {
         </Icon>
       </Info>
       {/* </Cricle> */}
+      {/* <Description>dsufb</Description> */}
     </Container>
     )
 }

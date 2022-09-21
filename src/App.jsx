@@ -1,3 +1,4 @@
+// import { useState, useEffect } from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Home from "./pages/Home";
 import Product from "./pages/Product";
@@ -7,16 +8,19 @@ import Login from "./pages/Login";
 import Cart from "./pages/Cart";
 // import Products from "./components/Products";
 import Navbar from "./components/Navbar"
+import ProductList from './pages/ProductList';
 
 const App = () => {
+
 
   return (
     <BrowserRouter>
     <Navbar/>
     <Routes>
-      <Route path='/' element={<Home/>}/>
+      <Route  exact path='/' element={<Home/>}/>
       <Route path='/login' element={<Login/>}/>
       <Route path='/register' element={<Register/>}/>
+      <Route path='/productlist' element={<ProductList/>}/>
       <Route path='/product' element={<Product/>}/>
       <Route path='/cart' element={<Cart/>}/>
     </Routes>
@@ -28,3 +32,9 @@ const App = () => {
 
 
 export default App;
+
+
+
+
+
+

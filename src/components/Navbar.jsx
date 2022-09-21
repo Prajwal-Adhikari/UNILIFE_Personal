@@ -30,7 +30,7 @@ const Right = styled.div`
   display: flex;
   align-items: center;
   justify-content: flex-end;
-`
+`;
 
 const SearchContainer = styled.div`
     display: flex;
@@ -53,7 +53,7 @@ const Logo = styled.h1`
     text-align: left;
     color:white;
     &:hover {
-        color: #fbff00;
+        color: #2f84d3;
     }
 `;
 
@@ -89,11 +89,7 @@ const Navbar = () => {
         </Center>
 
         <Right>
-            <MenuItems>
-              <Link to="/" style={{ color: 'inherit', textDecoration: 'inherit'}}>
-                HOME
-              </Link>
-            </MenuItems>
+         
             
 
             <MenuItems><Link to="/register" style={{ color: 'inherit', textDecoration: 'inherit'}}>
@@ -103,6 +99,11 @@ const Navbar = () => {
             <MenuItems>
               <Link to = "/login" style={{ color: 'inherit', textDecoration: 'inherit'}}>LOGIN</Link>
             </MenuItems>
+            <MenuItems>
+            <Link to="/productlist" style={{ color: 'inherit', textDecoration: 'inherit'}}>
+              SHOP    
+            </Link>
+          </MenuItems>
             <MenuItems><Link to = "/product" style={{ color: 'inherit', textDecoration: 'inherit'}}>PRODUCT</Link></MenuItems>
             <MenuItems>
                 <Badge badgeContent={4} color = "primary">

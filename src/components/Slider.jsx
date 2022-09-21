@@ -2,6 +2,7 @@ import { useState } from "react";
 import { ArrowLeftOutlined, ArrowRightOutlined } from '@material-ui/icons'
 import styled from 'styled-components'
 import { sliderItems } from '../data';
+import {Link} from "react-router-dom";
 
 const Container = styled.div`
   margin-top: 50px;
@@ -134,7 +135,9 @@ const Slider = () => {
             <Description>
               {item.description}
             </Description>
-            <Button>Buy</Button>
+            <Link to="/product" style={{ color: 'inherit', textDecoration: 'inherit'}}><Button>Buy</Button></Link>
+
+           
           </InfoContainer>
         </Slide>
 ))}
